@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('./img/background.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 130px;
+
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 40px;
+}
+
+nav  li a {
+    text-decoration: none;
+    color: lightgray;
+    font-style: italic;
+    padding: 2px;
+    border-radius: 5px;
+}
+nav  li a:hover {
+    text-decoration: underline;
+    background-color: rgba(211, 211, 211, 0.092);
+    
+    
+}
+
+/*------------------------------*/
+main {
+    text-align: right;
+    padding: 20vh 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+main h2 {
+    color: white;
+
+    font-style: italic;
+    padding: 4px;
+    line-height: 80%;
+    background: #ff0000;
+    white-space: pre-wrap;
+    box-shadow: -1px -1px 0 #ff0000, -2px -2px 0 #ff0000, -3px -3px 0 #ff0000, -4px -4px 0 #ff0000;
+}
+
+.forSport {
+    width: 10%;
+    right: -90%;
+    position: relative;
+
+}
+
+main p {
+    color: white;
+    font-size: 19px;
+    white-space: pre-wrap;
+}
+
+.text {
+    width: 30%;
+    position: relative;
+    right: -70%;
+}
+
+main h1 {
+    font-size: 150px;
+    background: -webkit-linear-gradient(90deg, #ff0000, #6b0505);
+    -webkit-background-clip: text;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 1px #ff0000;
+}
+
+button {
+    background-color: #252525;
+    height: 120px;
+    width: 120px;
+    margin: 0 -2px;
+    border: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #ff0000;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+button:last-child {
+    margin-right: 0;
+    background-color: #161616;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width:1200px) {
+    main h1 {
+        font-size: 100px;
+    }
+    main {
+        padding: 5vh 50px;
+    }
+    button {
+        height: 90px;
+        width: 90px; 
+    }
+    
+}
+@media screen and (max-width:1400px) {
+    main h1 {
+        font-size: 110px;
+    }
+    main {
+        
+        padding: 10vh 60px;
+    }
+    main p {
+       
+        font-size: 14px;
+      
+    }
+    button {
+        height: 110px;
+        width: 110px; 
+    }
+}
+@media screen and (max-width:970px) {
+    main h1 {
+        font-size: 90px;
+    }
+    main {
+        padding: 2vh 40px;
+    }
+    button {
+        height: 60px;
+        width: 60px; 
+    }
+    
+}
